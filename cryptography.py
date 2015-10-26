@@ -23,9 +23,13 @@ for i in (key):
     listnumsofkey.append(associations.find(i))
 print (listnumsofkey)
 
-print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
+#print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
     #for x in (listnumsofmessage):
         #for y in (listnumsofkey):
             #print (x,y)
         #break
+
+for x in (listnumsofmessage):
+    for y in (listnumsofkey):
+        print (x, y)
     
