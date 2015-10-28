@@ -1,6 +1,6 @@
 """
 cryptography.py
-Author: <your name here>
+Author: Anoushka Alavilli
 Credit: <list sources used, if any>
 
 Assignment:
