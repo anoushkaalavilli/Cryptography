@@ -28,8 +28,5 @@ print (listnumsofkey)
         #for y in (listnumsofkey):
             #print (x,y)
         #break
-
-for x in (listnumsofmessage):
-    for y in (listnumsofkey):
-        print (x, y)
-    
+if (len(listnumsofmessage)) != (len(listnumsofkey)):
+    print ((listnumsofmessage)*x)%(len(listnumsofkey))=0
