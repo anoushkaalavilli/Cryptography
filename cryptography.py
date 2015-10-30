@@ -28,5 +28,12 @@ print (listnumsofkey)
         #for y in (listnumsofkey):
             #print (x,y)
         #break
-if (len(listnumsofmessage)) != (len(listnumsofkey)):
-    print ((listnumsofmessage)*x)%(len(listnumsofkey))=0
+
+lenkey= (len(listnumsofkey))
+rangekey= (range(lenkey))
+print (rangekey)
+iinrangekey= (i in rangekey)
+for x in range(len(listnumsofmessage)):
+   print (x, iinrangekey)
+#if (len(listnumsofmessage)) != (len(listnumsofkey)):
+    #print ((listnumsofmessage)*x)%(len(listnumsofkey))=0
