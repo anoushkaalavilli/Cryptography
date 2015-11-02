@@ -35,7 +35,7 @@ print (listnumsofkey)
 #iinrangekey= (i in rangekey)
 #for x in range(len(listnumsofmessage)):
    #print (x, iinrangekey)
-x= None
+
+x= lambda (len(listnumsofmessage)): ((len(listnumsofmessage))*x)%(len(listnumsofkey))=0)
 if (len(listnumsofmessage)) >= (len(listnumsofkey)):
-    number= ((len(listnumsofmessage))*x)%(len(listnumsofkey))=0)
-    print (number)
+    ((listnumsofkey)*x)
