@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Anoushka Alavilli
-Credit: Mr. Dennison
+Credit: Mr. Dennison, Sarah Dunbar
 
 Assignment:
 
@@ -30,8 +30,8 @@ key= increasefactor*key
 print (message, key)
 sumval= []
 for i in (range(messagelength)):
-    (sumval.append(message[i], key[i]))
-    print (sumval)
+    print (message[i], key[i])
+    #print (associations.find(message[i], key[i]))
 
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
     #for x in (listnumsofmessage):
