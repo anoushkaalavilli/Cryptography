@@ -30,7 +30,8 @@ key= increasefactor*key
 print (message, key)
 sumval= []
 for i in (range(messagelength)):
-    print (message[i], key[i])
+    (sumval.append(message[i], key[i]))
+    print (sumval)
 
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
     #for x in (listnumsofmessage):
