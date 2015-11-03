@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Anoushka Alavilli
-Credit: <list sources used, if any>
+Credit: Mr. Dennison
 
 Assignment:
 
@@ -23,6 +23,14 @@ for i in (key):
     listnumsofkey.append(associations.find(i))
 print (listnumsofkey)
 
+keylength = len(key)
+messagelength = len(message)
+increasefactor = 1 + messagelength//keylength
+key= increasefactor*key
+print (message, key)
+for i in range(messagelength):
+    print (message[(i)], key[(i)])
+
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
     #for x in (listnumsofmessage):
         #for y in (listnumsofkey):
@@ -36,6 +44,7 @@ print (listnumsofkey)
 #for x in range(len(listnumsofmessage)):
    #print (x, iinrangekey)
 
-x= lambda (len(listnumsofmessage)): ((len(listnumsofmessage))*x)%(len(listnumsofkey))=0)
-if (len(listnumsofmessage)) >= (len(listnumsofkey)):
-    ((listnumsofkey)*x)
+#x= lambda ((len(listnumsofmessage))*x)%(len(listnumsofkey))=0)
+
+#if (len(listnumsofmessage)) >= (len(listnumsofkey)):
+ #   ((listnumsofkey)*x)
