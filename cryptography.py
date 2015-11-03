@@ -28,8 +28,9 @@ messagelength = len(message)
 increasefactor = 1 + messagelength//keylength
 key= increasefactor*key
 print (message, key)
-for i in range(messagelength):
-    print (message[(i)], key[(i)])
+sumval= []
+for i in (range(messagelength)):
+    print (message[i], key[i])
 
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
     #for x in (listnumsofmessage):
