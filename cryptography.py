@@ -15,7 +15,6 @@ key= input("Please enter a key. ")
 listnumsofmessage= []
 listnumsofkey= []
 
-#ENCRYPTION:
 for i in (message):
     listnumsofmessage.append(associations.find(i))
 print (listnumsofmessage)
@@ -24,6 +23,7 @@ for i in (key):
     listnumsofkey.append(associations.find(i))
 print (listnumsofkey)
 
+#ENCRYPT:
 keylength = len(key)
 messagelength = len(message)
 increasefactor = 1 + messagelength//keylength
@@ -48,9 +48,15 @@ for i in range (numbersinmessage):
 print (encrypted)
 
 #DECRYPTION:
+decryptnumslist= []
 for i in (encrypted):
-    print (associations.find(i))
-    
+    decryptnumslist.append(associations.find(i))
+print ((decryptnumslist), (listnumsofkey))
+for i in (decryptnumslist):
+    decrypt= (decryptnumslist[i]) - (listnumsofkey[i])
+    if decrypt <0:
+        decrypt= ((decrypt)+85)
+    print (decrypt)
     
     
     
