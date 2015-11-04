@@ -18,67 +18,40 @@ listnumsofkey= []
 
 for i in (message):
     listnumsofmessage.append(associations.find(i))
-print (listnumsofmessage)
+#print (listnumsofmessage)
 
 for i in (key):
     listnumsofkey.append(associations.find(i))
-print (listnumsofkey)
+#print (listnumsofkey)
 
 if (input1)==("e"):
     keylength = len(key)
     messagelength = len(message)
     increasefactor = 1 + messagelength//keylength
     key= increasefactor*key
-    print (message, key)
+    #print (message, key)
     sumval= []
-    for i in (range(messagelength)):
-        print (message[i], key[i])
+    #for i in (range(messagelength)):
+        #print (message[i], key[i])
 
     for i in (key):
         listnumsofkey.append(associations.find(i))
-    print ((listnumsofmessage), (listnumsofkey))
+    #print ((listnumsofmessage), (listnumsofkey))
 
     numbersinmessage= (len(listnumsofmessage))
-    print (numbersinmessage)
+    #print (numbersinmessage)
     encrypted= []
     for i in range (numbersinmessage):
         placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
         if placeinassociations > 84:
             placeinassociations= ((placeinassociations) - 85)
         encrypted.append(associations[placeinassociations])
-    print (encrypted)
+    #print (encrypted)
     str2= ""
     for i in (encrypted):
         str2= str2+(i)
     print (str2)
 
-#ENCRYPT:
-keylength = len(key)
-messagelength = len(message)
-increasefactor = 1 + messagelength//keylength
-key= increasefactor*key
-print (message, key)
-sumval= []
-for i in (range(messagelength)):
-    print (message[i], key[i])
-
-for i in (key):
-    listnumsofkey.append(associations.find(i))
-print ((listnumsofmessage), (listnumsofkey))
-
-numbersinmessage= (len(listnumsofmessage))
-print (numbersinmessage)
-encrypted= []
-for i in range (numbersinmessage):
-    placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
-    if placeinassociations > 84:
-        placeinassociations= ((placeinassociations) - 85)
-    encrypted.append(associations[placeinassociations])
-print (encrypted)
-str2= ""
-for i in (encrypted):
-    str2= str2+(i)
-print (str2)
 
 #DECRYPTION:
 decryptnumslist= []
