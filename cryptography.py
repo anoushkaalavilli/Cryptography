@@ -25,6 +25,18 @@ for i in (key):
 #print (listnumsofkey)
 
 if (input1)==("e"):
+    message= input("Message: ")
+    key= input("Key: ")
+    listnumsofmessage= []
+    listnumsofkey= []
+    
+    for i in (message):
+        listnumsofmessage.append(associations.find(i))
+    #print (listnumsofmessage)
+    
+    for i in (key):
+        listnumsofkey.append(associations.find(i))
+    #print (listnumsofkey)
     keylength = len(key)
     messagelength = len(message)
     increasefactor = 1 + messagelength//keylength
@@ -51,30 +63,44 @@ if (input1)==("e"):
     for i in (encrypted):
         str2= str2+(i)
     print (str2)
-
-
-#DECRYPTION:
-decryptnumslist= []
-for i in (encrypted):
-    decryptnumslist.append(associations.find(i))
-print ((decryptnumslist), (listnumsofkey))
-numberindecryptlist= (len(decryptnumslist))
-answerlist= []
-for i in range(numberindecryptlist):
-    print ("print i=", i)
-    decrypt= ((decryptnumslist[i]) - (listnumsofkey[i]))
-    if decrypt <0:
-        decrypt= ((decrypt)+85)
-    answerlist.append(decrypt)
-print (answerlist)
-letteranswerlist= []
-for i in (answerlist):
-    letteranswerlist.append(associations[i])
-print ((letteranswerlist))
-str1= ""
-for i in (letteranswerlist):
-    str1= str1+(i)
-print (str1)
+elif (input1)==("d"):
+    message= input("Message: ")
+    key= input("Key: ")
+    listnumsofmessage= []
+    listnumsofkey= []
+    
+    for i in (message):
+        listnumsofmessage.append(associations.find(i))
+    #print (listnumsofmessage)
+    
+    for i in (key):
+        listnumsofkey.append(associations.find(i))
+    #print (listnumsofkey)
+    decryptnumslist= []
+    for i in (encrypted):
+        decryptnumslist.append(associations.find(i))
+    print ((decryptnumslist), (listnumsofkey))
+    numberindecryptlist= (len(decryptnumslist))
+    answerlist= []
+    for i in range(numberindecryptlist):
+        print ("print i=", i)
+        decrypt= ((decryptnumslist[i]) - (listnumsofkey[i]))
+        if decrypt <0:
+            decrypt= ((decrypt)+85)
+        answerlist.append(decrypt)
+    print (answerlist)
+    letteranswerlist= []
+    for i in (answerlist):
+        letteranswerlist.append(associations[i])
+    print ((letteranswerlist))
+    str1= ""
+    for i in (letteranswerlist):
+        str1= str1+(i)
+    print (str1)
+elif (input1)==("q"):
+    print ("Goodbye!")
+else:
+    print ("Did not understand command, try again.")
     
     
     
