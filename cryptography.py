@@ -66,8 +66,12 @@ if (input1)==("e"):
 elif (input1)==("d"):
     message= input("Message: ")
     key= input("Key: ")
+    keylength = len(key)
+    messagelength = len(message)
+    increasefactor = 1 + messagelength//keylength
+    key= increasefactor*key
     listnumsofmessage= []
-    #listnumsofkey= []
+    listnumsofkey= []
     
     for i in (message):
         listnumsofmessage.append(associations.find(i))
@@ -75,24 +79,24 @@ elif (input1)==("d"):
     
     for i in (key):
         listnumsofkey.append(associations.find(i))
-    #print (listnumsofkey)
+    #print ("listnumsofkey=", listnumsofkey)
     decryptnumslist= []
     for i in (message):
         decryptnumslist.append(associations.find(i))
-    print ((decryptnumslist), (listnumsofkey))
+    #print ((decryptnumslist), (listnumsofkey))
     numberindecryptlist= (len(decryptnumslist))
     answerlist= []
     for i in range(numberindecryptlist):
-        print ("i=", i)
-        decrypt= ((decryptnumslist[i]) - (listnumsofkey[i]))
+        #print ("i=", i)
+        decrypt= ((decryptnumslist[i])-(listnumsofkey[i]))
         if decrypt <0:
             decrypt= ((decrypt)+85)
         answerlist.append(decrypt)
-    print (answerlist)
+    #print (answerlist)
     letteranswerlist= []
     for i in (answerlist):
         letteranswerlist.append(associations[i])
-    print ((letteranswerlist))
+    #print ((letteranswerlist))
     str1= ""
     for i in (letteranswerlist):
         str1= str1+(i)
