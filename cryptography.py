@@ -46,8 +46,9 @@ for i in range (numbersinmessage):
 print (encrypted)
 
 #DECRYPTION:
+associationslist= (list(associations))
 for i in (encrypted):
-    print ("hello")
+    print (associationslist.find(i))
     
     
     
