@@ -67,7 +67,7 @@ elif (input1)==("d"):
     message= input("Message: ")
     key= input("Key: ")
     listnumsofmessage= []
-    listnumsofkey= []
+    #listnumsofkey= []
     
     for i in (message):
         listnumsofmessage.append(associations.find(i))
@@ -83,7 +83,7 @@ elif (input1)==("d"):
     numberindecryptlist= (len(decryptnumslist))
     answerlist= []
     for i in range(numberindecryptlist):
-        print ("print i=", i)
+        print ("i=", i)
         decrypt= ((decryptnumslist[i]) - (listnumsofkey[i]))
         if decrypt <0:
             decrypt= ((decrypt)+85)
