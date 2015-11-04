@@ -42,6 +42,8 @@ print (numbersinmessage)
 encrypted= []
 for i in range (numbersinmessage):
     placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
+    if placeinassociations > 84:
+        placeinassociations= ((placeinassociations) - 85)
     encrypted.append(associations[placeinassociations])
 print (encrypted)
 
