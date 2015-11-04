@@ -11,17 +11,17 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 input1= (input("Enter e to encrypt, d to decrypt, or q to quit: "))
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-message= input("Message: ")
-key= input("Key: ")
+#message= input("Message: ")
+#key= input("Key: ")
 listnumsofmessage= []
 listnumsofkey= []
 
-for i in (message):
-    listnumsofmessage.append(associations.find(i))
+#for i in (message):
+    #listnumsofmessage.append(associations.find(i))
 #print (listnumsofmessage)
 
-for i in (key):
-    listnumsofkey.append(associations.find(i))
+#for i in (key):
+    #listnumsofkey.append(associations.find(i))
 #print (listnumsofkey)
 
 if (input1)==("e"):
@@ -77,7 +77,7 @@ elif (input1)==("d"):
         listnumsofkey.append(associations.find(i))
     #print (listnumsofkey)
     decryptnumslist= []
-    for i in (encrypted):
+    for i in (message):
         decryptnumslist.append(associations.find(i))
     print ((decryptnumslist), (listnumsofkey))
     numberindecryptlist= (len(decryptnumslist))
