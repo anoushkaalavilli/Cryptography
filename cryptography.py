@@ -35,6 +35,9 @@ for i in (range(messagelength)):
 for i in (key):
     listnumsofkey.append(associations.find(i))
 print ((listnumsofmessage), (listnumsofkey))
+
+numbersinmessage= (len(listnumsofmessage))
+print (numbersinmessage)
     
     
     
@@ -50,6 +53,8 @@ print ((listnumsofmessage), (listnumsofkey))
     
     
     
+  
+  
     #print (associations.find(message[i], key[i]))
 
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
