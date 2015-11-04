@@ -31,6 +31,25 @@ print (message, key)
 sumval= []
 for i in (range(messagelength)):
     print (message[i], key[i])
+
+for i in (key):
+    listnumsofkey.append(associations.find(i))
+print ((listnumsofmessage), (listnumsofkey))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     #print (associations.find(message[i], key[i]))
 
 #print (((listnumsofmessage).count(i))%((listnumsofkey).count(i)))
