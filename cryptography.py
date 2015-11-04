@@ -65,6 +65,10 @@ letteranswerlist= []
 for i in (answerlist):
     letteranswerlist.append(associations[i])
 print ((letteranswerlist))
+str1= ""
+for i in (letteranswerlist):
+    str1= str1+(i)
+print (str1)
     
     
     
