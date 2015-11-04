@@ -61,8 +61,10 @@ for i in range(numberindecryptlist):
         decrypt= ((decrypt)+85)
     answerlist.append(decrypt)
 print (answerlist)
+letteranswerlist= []
 for i in (answerlist):
-    print ((associations[i]).end"")
+    letteranswerlist.append(associations[i])
+    print (letteranswerlist)
     
     
     
