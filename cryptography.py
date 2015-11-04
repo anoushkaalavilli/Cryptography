@@ -38,10 +38,11 @@ print ((listnumsofmessage), (listnumsofkey))
 
 numbersinmessage= (len(listnumsofmessage))
 print (numbersinmessage)
-listnums= []
+encrypted= []
 for i in range (numbersinmessage):
     placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
-    print (associations[placeinassociations])
+    encrypted.append(associations[placeinassociations])
+print (encrypted)
 
     
     
