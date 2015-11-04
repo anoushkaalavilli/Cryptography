@@ -9,9 +9,10 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
+input1= (input("Enter e to encrypt, d to decrypt, or q to quit: "))
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-message= input("Please enter a message. ")
-key= input("Please enter a key. ")
+message= input("Message: ")
+key= input("Key: ")
 listnumsofmessage= []
 listnumsofkey= []
 
@@ -22,6 +23,34 @@ print (listnumsofmessage)
 for i in (key):
     listnumsofkey.append(associations.find(i))
 print (listnumsofkey)
+
+if (input1)==("e"):
+    keylength = len(key)
+    messagelength = len(message)
+    increasefactor = 1 + messagelength//keylength
+    key= increasefactor*key
+    print (message, key)
+    sumval= []
+    for i in (range(messagelength)):
+        print (message[i], key[i])
+
+    for i in (key):
+        listnumsofkey.append(associations.find(i))
+    print ((listnumsofmessage), (listnumsofkey))
+
+    numbersinmessage= (len(listnumsofmessage))
+    print (numbersinmessage)
+    encrypted= []
+    for i in range (numbersinmessage):
+        placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
+        if placeinassociations > 84:
+            placeinassociations= ((placeinassociations) - 85)
+        encrypted.append(associations[placeinassociations])
+    print (encrypted)
+    str2= ""
+    for i in (encrypted):
+        str2= str2+(i)
+    print (str2)
 
 #ENCRYPT:
 keylength = len(key)
