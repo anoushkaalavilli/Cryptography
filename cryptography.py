@@ -38,7 +38,11 @@ print ((listnumsofmessage), (listnumsofkey))
 
 numbersinmessage= (len(listnumsofmessage))
 print (numbersinmessage)
-    
+listnums= []
+for i in range (numbersinmessage):
+    placeinassociations= ((listnumsofmessage[i]) + (listnumsofkey[i]))
+    print (associations[placeinassociations])
+
     
     
     
