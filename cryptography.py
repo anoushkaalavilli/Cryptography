@@ -15,6 +15,7 @@ key= input("Please enter a key. ")
 listnumsofmessage= []
 listnumsofkey= []
 
+#ENCRYPTION:
 for i in (message):
     listnumsofmessage.append(associations.find(i))
 print (listnumsofmessage)
@@ -44,6 +45,9 @@ for i in range (numbersinmessage):
     encrypted.append(associations[placeinassociations])
 print (encrypted)
 
+#DECRYPTION:
+for i in (encrypted):
+    
     
     
     
