@@ -46,6 +46,10 @@ for i in range (numbersinmessage):
         placeinassociations= ((placeinassociations) - 85)
     encrypted.append(associations[placeinassociations])
 print (encrypted)
+str2= ""
+for i in (encrypted):
+    str2= str2+(i)
+print (str2)
 
 #DECRYPTION:
 decryptnumslist= []
