@@ -64,7 +64,7 @@ print (answerlist)
 letteranswerlist= []
 for i in (answerlist):
     letteranswerlist.append(associations[i])
-    print (letteranswerlist)
+print ((letteranswerlist))
     
     
     
