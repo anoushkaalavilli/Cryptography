@@ -52,8 +52,10 @@ decryptnumslist= []
 for i in (encrypted):
     decryptnumslist.append(associations.find(i))
 print ((decryptnumslist), (listnumsofkey))
-for i in (decryptnumslist):
-    decrypt= (decryptnumslist[i]) - (listnumsofkey[i])
+numberindecryptlist= (len(decryptnumslist))
+for i in range(numberindecryptlist):
+    print ("print i=", i)
+    decrypt= ((i) - (listnumsofkey[i]))
     if decrypt <0:
         decrypt= ((decrypt)+85)
     print (decrypt)
